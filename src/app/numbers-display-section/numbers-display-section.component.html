@@ -1,0 +1,25 @@
+<div class="display-wrapper" [ngClass]="{'display-wrapper__padding': phoneNumbers.length <= 0}">
+  <ng-container *ngIf="phoneNumbers.length > 0">
+    <span><span class="text-primary">{{phoneNumbers.length}}</span> phone number{{phoneNumbers.length === 1 ? '':'s'}}</span>
+    <div class="header-section">
+      <div><span class="text-primary">Min: </span> <span class="text-small">{{minPhoneNumber}}</span></div>
+      <div><span class="text-primary">Max: </span> <span class="text-small">{{maxPhoneNumber}}</span></div>
+      <div [formGroup]="generateNumberForm">
+        <mat-form-field>
+          <mat-select [formControl]="generateNumberForm.get('sort')" placeholder="Sort phone numbers">
+            <mat-option value="asc">ASC</mat-option>
+            <mat-option value="desc">DESC</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <button mat-stroked-button color="primary" (click)="exportPhoneNumbers()">Export phone numbers</button>
+    </div>
+    <mat-list *ngIf="phoneNumbers.length > 0" class="list" role="list">
+      <mat-list-item *ngFor="let phoneNumber of phoneNumbers" role="listitem">{{phoneNumber}}</mat-list-item>
+    </mat-list>
+  </ng-container>
+  <ng-container *ngIf="phoneNumbers.length <= 0">
+    <h4>You have no generated numbers yet!</h4>
+    <small class="text-appear">Generated numbers appear here</small>
+  </ng-container>
+</div>

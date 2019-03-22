@@ -1,0 +1,18 @@
+<form [formGroup]="generateNumberForm">
+  <div class="form-wrapper">
+    <mat-form-field appearance="outline" class="number-input-wrapper">
+      <mat-label>How many phone numbers you want to generate ?</mat-label>
+      <input type="text" formControlName="rounds" matInput placeholder="Round of numbers">
+      <mat-icon color="primary" matSuffix>keyboard</mat-icon>
+      <mat-hint>Value should not be greater than 10000</mat-hint>
+    </mat-form-field>
+    <div class="button-wrapper">
+      <button mat-raised-button color="primary" id="generate-numbers-btn" (click)="generateNumbers()">Generate numbers</button>
+    </div>
+  </div>
+</form>
+<app-numbers-display-section
+  [generateNumberForm]="generateNumberForm"
+  [phoneNumbers]="phoneNumbers"
+  [minPhoneNumber]="minPhoneNumber"
+  [maxPhoneNumber]="maxPhoneNumber"></app-numbers-display-section>
