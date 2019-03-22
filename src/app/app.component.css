@@ -1,0 +1,9 @@
+.app-wrapper {
+  width: 50%;
+  text-align: center;
+  margin: 50px auto auto;
+}
+
+.header-icon {
+  font-size: 60px;
+}
