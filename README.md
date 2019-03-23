@@ -1,27 +1,31 @@
-# NumberGenerator
+# Phone numbers generator [![Coverage Status](https://coveralls.io/repos/github/johadi/random-numbers-generator/badge.svg)](https://coveralls.io/github/johadi/random-numbers-generator)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
+**Phone numbers generator** is an application where anyone can generate and save random phone numbers.
 
-## Development server
+## Technology Stack
+- [Angular](https://angular.io/) A JavaScript framework for building high performance application.
+- [Angular Material](https://material.angular.io/) A material design framework for creating angular components with styles.
+- [TypeScript](https://www.typescriptlang.org/) A strict syntactical superset of JavaScript, and adds optional static typing to the language.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Installation
 
-## Code scaffolding
+-   Install [Node js](https://nodejs.org/en/) on your machine
+-   Install [Angular CLI](https://cli.angular.io//) on your machine
+-   Clone the repository `git clone https://github.com/johadi/random-numbers-generator.git`
+-   Change into the directory `cd /random-numbers-generator`
+-   Install all required dependencies with `npm install`
+-   Open a terminal and run `npm run start` to start the application.
+-   Navigate to `localhost:4200` on your browser to open the application
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Testing
+-   Run `npm test`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Want to Contribute ?
+  * Fork the repository
+  * Make your contributions
+  * Make sure your work is well tested
+  * Create Pull request against the **development** branch.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## License
+MIT
