@@ -7,6 +7,17 @@
 - [Angular Material](https://material.angular.io/) A material design framework for creating angular components with styles.
 - [TypeScript](https://www.typescriptlang.org/) A strict syntactical superset of JavaScript, and adds optional static typing to the language.
 
+## How it works
+#### Invalid inputs
+![error-gen](https://user-images.githubusercontent.com/20380537/54867300-02858180-4d7f-11e9-9c18-6914aaa4663d.gif)
+
+#### Valid input
+![success-gen](https://user-images.githubusercontent.com/20380537/54867326-54c6a280-4d7f-11e9-8bcc-5a91720dadda.gif)
+
+#### Sorting and exporting result
+![sort-gen](https://user-images.githubusercontent.com/20380537/54867350-8dff1280-4d7f-11e9-9938-0529b411ea30.gif)
+
+
 ## Installation
 
 -   Install [Node js](https://nodejs.org/en/) on your machine
