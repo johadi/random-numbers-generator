@@ -1,0 +1,37 @@
+.display-wrapper {
+  border: 1px #3f51b5 solid;
+  border-radius: 0 0 4px 4px;
+  border-top: 0;
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+
+.display-wrapper__padding {
+  padding-bottom: 20px;
+}
+
+.header-section {
+  margin-top: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/deep/ .mat-list-item-content {
+  justify-content: center !important;
+  color: #fff;
+}
+
+.list {
+  background-color: #7f7f7f;
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+.text-appear {
+  opacity: 0.7;
+}

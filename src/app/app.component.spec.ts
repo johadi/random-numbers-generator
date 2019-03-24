@@ -1,12 +1,41 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import {GenerateNumbersFormComponent} from './generate-numbers-form/generate-numbers-form.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {
+  MatButtonModule,
+  MatFormFieldModule,
+  MatIconModule,
+  MatInputModule,
+  MatListModule,
+  MatOptionModule,
+  MatSelectModule
+} from '@angular/material';
+import {NumbersDisplaySectionComponent} from './numbers-display-section/numbers-display-section.component';
+import {ToastrModule} from 'ngx-toastr';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        GenerateNumbersFormComponent,
+        NumbersDisplaySectionComponent
       ],
+      imports: [
+        FormsModule,
+        ReactiveFormsModule,
+        BrowserAnimationsModule,
+        ToastrModule.forRoot(),
+        MatInputModule,
+        MatButtonModule,
+        MatFormFieldModule,
+        MatOptionModule,
+        MatSelectModule,
+        MatIconModule,
+        MatListModule
+      ]
     }).compileComponents();
   }));
 
@@ -16,16 +45,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'number-generator'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('number-generator');
-  });
-
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to number-generator!');
+    expect(compiled.querySelector('h1').textContent).toContain('RANDOM PHONE NUMBERS GENERATOR');
   });
 });
